@@ -4,11 +4,12 @@ from routes.auth import auth_router
 from routes.auth import get_current_user
 from routes.metrics import metric_router
 from routes.campaigns import campaign_router
+from routes.feedbacks import Feedback_router
 from fastapi.security import OAuth2PasswordBearer
 from fastapi import Depends
 
 # Importar todos los modelos para que SQLAlchemy los configure correctamente
-from models import User, Campaign, Metric, base
+from models import User, Campaign, Metric, Feedback, base
 
 from schemas.user_schema import UserOut
 
@@ -31,6 +32,7 @@ app.include_router(user_router)
 app.include_router(auth_router)
 app.include_router(campaign_router)
 app.include_router(metric_router)
+app.include_router(Feedback_router)
 
 
 
