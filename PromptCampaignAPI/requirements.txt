@@ -1,0 +1,30 @@
+# Dependencias necesarias para la integración con n8n
+
+# Framework Web
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+
+# Base de datos
+sqlalchemy>=2.0.0
+asyncpg>=0.29.0
+psycopg2-binary>=2.9.9
+
+# Cliente HTTP para comunicación con n8n
+httpx>=0.25.0
+
+# Validación de datos
+pydantic>=2.0.0
+pydantic[email]>=2.0.0
+
+# Autenticación
+python-jose[cryptography]>=3.3.0
+passlib[bcrypt]>=1.7.4
+python-multipart>=0.0.6
+
+# Variables de entorno
+python-dotenv>=1.0.0
+
+# Testing (opcional)
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+httpx>=0.25.0  # Para testing de endpoints
