@@ -15,4 +15,5 @@ class Campaign(base):
 
     user = relationship("User", back_populates="campaigns")
     metrics = relationship("Metric", back_populates="campaign", cascade="all, delete-orphan")
-   
+    feedbacks = relationship("Feedback", back_populates="campaign", cascade="all, delete-orphan")
+

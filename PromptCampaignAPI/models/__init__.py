@@ -2,6 +2,7 @@
 from .user import User, base
 from .campaign import Campaign
 from .metric import Metric
+from .feedback import Feedback
 
 # Exportar todo para facilitar las importaciones
-__all__ = ["User", "Campaign", "Metric", "base"]
+__all__ = ["User", "Campaign", "Metric", "Feedback", "base"]
